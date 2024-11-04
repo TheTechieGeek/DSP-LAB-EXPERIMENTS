@@ -1,5 +1,5 @@
 %{
-HAMMING WINDOW
+HANNING WINDOW
 %}
 
 clc;
@@ -50,7 +50,7 @@ figure;
 % LOW-PASS FILTER PLOT
 subplot(3, 2, 1);
 plot(w/pi, 20*log10(abs(h_lowpass)));  
-title('LOW PASS FILTER USING RECTANGULAR WINDOW');
+title('LOW PASS FILTER USING HAMMING WINDOW');
 xlabel('Normalized Frequency ');
 ylabel('Magnitude (dB)');
 grid on;
